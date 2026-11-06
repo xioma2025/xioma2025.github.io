@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Mar de Coral</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER Y NAVEGACIÓN GLOBAL -->
+  <header>
+    <div class="logo">Mar de <span>Coral</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="menu.html">Menú Digital</a></li>
+        <li><a href="reservas.html">Reservaciones</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BANNER DE ENCABEZADO -->
+    <section class="hero" style="height: 35vh;">
+      <h1>Ponte en Contacto</h1>
+      <p>¿Tienes dudas, eventos especiales o sugerencias? Queremos escucharte.</p>
+    </section>
+
+    <!-- SECCIÓN PRINCIPAL DE CONTACTO -->
+    <div class="contact-container">
+      
+      <!-- Información del Restaurante + Mapa -->
+      <section class="contact-info">
+        <h3>Información de Atención</h3>
+        <p>Visítanos en nuestras instalaciones o comunícate con nosotros directamente por teléfono o correo.</p>
+
+        <div class="info-item">
+          <strong>Dirección:</strong>
+          <span>Av. Marina Sur #102, Zona Costera frente al faro.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Teléfonos de Atención:</strong>
+          <span>+503 2200-0000 / +503 7000-0000</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Correo Electrónico:</strong>
+          <span>contacto@mardecoral.com</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Horario Comercial:</strong>
+          <span>Lunes a Domingo: 11:00 AM - 10:00 PM</span>
+        </div>
+
+        <!-- CONTENEDOR DEL MAPA EN VIVO -->
+        <div style="margin-top: 1.5rem; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+          <strong style="display:block; margin-bottom: 0.5rem; color: var(--secondary-color);">Nuestra Ubicación:</strong>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15515.82664724285!2d-89.362145!3d13.489112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63459c03b1e353%3A0x6b80153f36098bf8!2sPuerto%20de%20La%20Libertad!5e0!3m2!1ses!2ssv!4v1700000000000!5m2!1ses!2ssv" 
+            width="100%" 
+            height="220" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Formulario de Mensaje -->
+      <section class="form-container" style="margin: 0; max-width: 100%;">
+        <h2 style="font-size: 1.5rem; text-align: left; margin-bottom: 1rem;">Enviarnos un Mensaje</h2>
+
+        <form action="index.html" method="GET">
+          
+          <div class="form-group">
+            <label for="nombre-contacto">Nombre Completo:</label>
+            <input 
+              type="text" 
+              id="nombre-contacto" 
+              name="nombre" 
+              class="form-control" 
+              placeholder="Ej. Juan Pérez" 
+              required 
+              minlength="3">
+          </div>
+
+          <div class="form-group">
+            <label for="email-contacto">Correo Electrónico:</label>
+            <input 
+              type="email" 
+              id="email-contacto" 
+              name="email" 
+              class="form-control" 
+              placeholder="correo@ejemplo.com" 
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <input 
+              type="text" 
+              id="asunto" 
+              name="asunto" 
+              class="form-control" 
+              placeholder="Ej. Evento privado, Sugerencia..." 
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea 
+              id="mensaje" 
+              name="mensaje" 
+              class="form-control" 
+              rows="4" 
+              placeholder="Escribe tu mensaje aquí..." 
+              required 
+              minlength="10"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Mar de Coral</h4>
+        <p>Lo mejor de la cocina marina en un ambiente único.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Horarios</h4>
+        <p>Lunes a Domingo: 11:00 AM - 10:00 PM</p>
+      </div>
+      <div class="footer-section">
+        <h4>Ubicación</h4>
+        <p>Av. Marina Sur #102, Zona Costera</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Restaurante Mar de Coral. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
